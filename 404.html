@@ -25,15 +25,25 @@
 
 <title>FAQ</title>
 </head>
+
+<header>
+<a href="https://uray.gen.tr" style="float: left;"><img src="https://uray.gen.tr/logo.png" height="150" alt="uray.gen.tr"></a>
+</header>
   
 <body style="margin-top: 8%;">
 
 <center>
-<h1 style="font-size: 400%; letter-spacing: 1px;">4<i class="far fa-solid fa-circle-exclamation"></i>4</h1>
+<h1 style="font-size: 400%; letter-spacing: 1px; color: #E30A17;">4<i class="far fa-solid fa-circle-exclamation"></i>4</h1>
         
 <h3>
-Page not found, oops
+Page not found on this secondary website! Try <a id="search" href="find_webpage.html?wp=404.html">searching on every site of uray.gen.tr</a>.
 </h3>
+  
+<script>
+window.addEventListener("load", function() {
+document.getElementById('search').href = 'find_webpage.html?wp=' + window.location.pathname.replace('.html', '').replace('/', ' ')
+})
+</script>
       
 <br>
 
